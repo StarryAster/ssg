@@ -27,9 +27,9 @@ class TestTextNode(unittest.TestCase):
         self.assertEqual(html_node.value, "This is a text node")
 
     def test_img(self):
-        node = TextNode(None, TextType.IMAGE, "https://qosmiques.xyz/fundo.png")
+        node = TextNode("", TextType.IMAGE, "https://qosmiques.xyz/fundo.png")
         html_node = text_node_to_html_node(node)
-        self.assertEqual(html_node.value, None)
+        self.assertEqual(html_node.value, "")
         self.assertEqual(html_node.props["src"], "https://qosmiques.xyz/fundo.png")
 
 if __name__ == "__main__":
