@@ -39,7 +39,7 @@ def fill_public():
     return
 
 
-def generate_pages_recursive(dir_path_content, template_path, dest_dir_pat, basepath):
+def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath):
     content_list = os.listdir(dir_path_content)
     for item in content_list:
         if item.endswith(".md"):
